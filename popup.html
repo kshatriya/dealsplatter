@@ -1,0 +1,28 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="popup.css" />
+<script src="jquery.min.js"></script>
+<script>
+	function getDeals()
+	{
+		var search = $('#search').val();
+		$.ajax({
+				url : 'http://dealsplatter.com/api/search.php?q='+search,
+				type : 'POST',
+				success: function(data) {
+					$('#deals').html('');
+					$('#deals').html(data);	
+				}
+			});
+	}
+</script>
+</head>
+<body>
+<div id="search_form">
+<input type="text" id="search" name="search" style="width: 300px;" value="">
+<a style="float:right;display:block;" href="#" id="search_button" class="submit" onclick="getDeals();">Search</a>
+</div>
+
+<div id="deals"></div>
+</body>
+</html>

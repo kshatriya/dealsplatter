@@ -1,0 +1,22 @@
+body {
+	min-width: 375px;
+	min-height: 480px;
+	margin: 5px;
+	overflow-x: hidden;
+	font-family: Tahoma, Geneva, Arial;
+	font-size: 10pt;
+	background-color: #D8D8D8;
+	background-position-x: 50%;
+	background-position-y: 0%;
+	background-repeat: repeat-x;
+}
+
+.submit {
+	color: white;
+	font-weight: bold;
+	background: #288518;
+	text-decoration: none;
+	border: 1px solid #176908;
+	padding: 2px 5px;
+	margin: 3px;
+}

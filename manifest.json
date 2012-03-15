@@ -1,0 +1,12 @@
+{
+  "name": "DealsPlatter: One Website | Countless Deals",
+  "version": "1.0",
+  "description": "One Website | Countless Deals",
+  "browser_action": {
+    "default_icon": "icon_s.JPG",
+    "popup": "popup.html"
+  },  
+  "permissions": [
+    "http://dealsplatter.com/api/?q="
+  ]
+}
