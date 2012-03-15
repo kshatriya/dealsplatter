@@ -7,6 +7,6 @@
     "popup": "popup.html"
   },  
   "permissions": [
-    "http://dealsplatter.com/api/"
+    "http://dealsplatter.com/api/search.php?q="
   ]
 }
