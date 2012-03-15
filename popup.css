@@ -1,5 +1,6 @@
 body {
 	min-width: 375px;
+	max-width: 375px;
 	min-height: 480px;
 	margin: 5px;
 	overflow-x: hidden;
