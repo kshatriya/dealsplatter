@@ -11,9 +11,7 @@ function getDeals()
 				
 				for (var i = 0; i < result.length || i <= 50; i++)
 				{
-					$('#deals').append('<div id="deals_'+i+'">');
-					$('#deals').append('<a href="http://dealsplatter.com/deal/'+result[i].id+'/">'+result[i]['title']);
-					$('#deals').append('</a></div><br/><br/>');
+					$('#deals').append('<div id="deals_'+i+'"><a href="http://dealsplatter.com/deal/'+result[i].id+'/">'+result[i]['title']+'</a></div><br/><br/>');
 				}
 			}
 		});
