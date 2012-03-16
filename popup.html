@@ -2,14 +2,19 @@
 <head>
 <link rel="stylesheet" type="text/css" href="popup.css" />
 <script src="jquery.min.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="scrollbar.js"></script>
 <script src="popup.js"></script>
 </head>
-<body>
+<body onload="getDeals();$('#deals').slimscroll({color: '#000',size: '5px'});">
 <div id="search_form">
 <input type="text" id="search" name="search" style="width: 300px;" value="">
-<a style="float:right;display:block;" href="#" id="search_button" class="submit" onclick="getDeals();">Search</a>
+<a style="float:right;display:block;" href="#" id="search_button" class="submit" 
+	onclick="getDeals();">Search</a>
 </div>
-<hr />
-<div id="deals">Please Search</div>
+<hr/>
+<div id="main">
+<div id="deals" class="mousescroll"></div>
+</div>
 </body>
 </html>

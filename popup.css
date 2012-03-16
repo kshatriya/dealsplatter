@@ -2,6 +2,7 @@ body {
 	min-width: 375px;
 	max-width: 375px;
 	min-height: 480px;
+	max-height: 480px;
 	margin: 5px;
 	overflow-x: hidden;
 	font-family: Tahoma, Geneva, Arial;
@@ -12,12 +13,37 @@ body {
 	background-repeat: repeat-x;
 }
 
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin-left: 0;
+}
+
 .submit {
 	color: white;
 	font-weight: bold;
 	background: #288518;
-	text-decoration: none;
+	
 	border: 1px solid #176908;
 	padding: 2px 5px;
 	margin: 3px;
 }
+
+a{
+	text-decoration: none;
+}
+
+div#deals {
+    width: 375px;
+	height: 550px;   
+}
+div.mousescroll {
+    overflow: hidden;
+}
+div.mousescroll:hover {
+    overflow-y: scroll;
+}
+ul {
+    list-style-type: none;
+}
+.slimScrollDiv { border: 1px solid #ccc; margin:10px; }
